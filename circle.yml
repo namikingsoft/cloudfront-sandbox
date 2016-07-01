@@ -4,3 +4,10 @@ machine:
 test:
   override:
     - echo 'No test.'
+
+deployment:
+  master:
+    branch: master
+    commands:
+      - bin/deploy.sh
+      - bin/purge.sh
